@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transition-duration: 1s;
+    color: rgb(220, 153, 72);
+}
+
+main {
+    padding: 20px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+main h2 {
+    color: #333; 
+}
+
+main h2:hover {
+    color: rgb(78, 129, 126); /* Change 'red' to the color you prefer */
+  }
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow products to wrap */
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+.product {
+    width: calc(20% - 15px); /* Each product takes 20% width with space between */
+    margin-bottom: 20px; /* Space between rows */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.2s; /* Smooth transition for zoom effect */
+}
+
+.product img {
+    width: 100%; /* Ensure image fills its container */
+    /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s; /* Smooth transition for zoom effect */
+}
+
+.product:hover img {
+    transform: scale(1.1); /* Slightly zoom image on hover */
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 10px); /* On smaller screens, each product takes 50% width */
+    }
+}
+
+.cart-list, .cart-summary {
+    margin-top: 2rem;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+}
+
+.cart-summary {
+    font-weight: bold;
+    text-align: right;
+}
+
+.checkout {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+   
+}
